@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madi Zhakenov Guitar - Learn the Guitar</title>
+    <link rel='icon' type="image/x-icon" href="guitaricon.png">
+    <style>
+        body {
+            /* Margin is zero so that page fills the entire screen */
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #333;
+            background-color: #f4f4f4;
+
+        }
+        .container {
+            /* Max width is 800px so that it doesn't take too much space on the screen and also helps to use margin auto which will place container to the center */
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+        }
+        img{
+            border-radius: 8px;
+        }
+        table,th,td{
+            /* Border collapse so that there is no space between the cells */
+            border: 1px solid #333;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        .pricetable{
+            /* So that the table will be centered and will take the entire width of the screen */
+            margin: auto;
+            min-width: 800px;
+        }
+        button{
+            background-color: #e74c3c;
+            color: #fff;
+            border: 0;
+            padding: 8px;
+            border-radius: 2px;
+        }
+        button:hover{
+            /* When hovering over the button, it will change the background color to a darker shade of red */
+            background-color: #c0392b;
+        }
+        input{
+            padding: 8px;
+            border: 1px solid #333;
+            border-radius: 2px;
+        }
+        select{
+            padding: 8px;
+            border: 1px solid #333;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- I used div tag, so that I can center the content within it -->
+    <div class="container">
+        <h1>Guitar Courses</h1>
+        <h2>Learn Guitar with Our Expert Instructors</h2>
+        <p><i>Whether you're a beginner or an experienced guitarist, our courses are designed to help you improve your skills and achieve your musical goals.</i></p>
+        
+        <img src="guitarplaying.jpg" alt="Guitar Playing">
+
+        <!-- I copied the linked of the video from my channel, so that I can embed it into the page. -->
+        <iframe width="850" height="550" src="https://www.youtube.com/embed/6Jj23zHXnzU?si=N99JdX6fwevwvDSH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Our Courses</h3>
+        <ul>
+            <li>Beginner Guitar Course</li>
+            <li>Intermediate Guitar Course</li>
+            <li>Advanced Guitar Course</li>
+            <li>Acoustic Guitar Mastery</li>
+            <li>Electric Guitar Mastery</li>
+        </ul>
+
+
+
+        <h4>Course Pricing</h4>
+
+        <table class = 'pricetable'> 
+            <tr>
+                <th>Course</th>
+                <th>Level</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Beginner Guitar Course</td>
+                <td>Beginner</td>
+                <td>₸10000</td>
+            </tr>
+            <tr>
+                <td>Intermediate Guitar Course</td>
+                <td>Intermediate</td>
+                <td>₸15000</td>
+            </tr>
+            <tr>
+                <td>Advanced Guitar Course</td>
+                <td>Advanced</td>
+                <td>₸20000</td>
+            </tr>
+            <tr>
+                <td>Acoustic Guitar Mastery</td>
+                <td>All Levels</td>
+                <td>₸25000</td>
+            </tr>
+            <tr>
+                <td>Electric Guitar Mastery</td>
+                <td>All Levels</td>
+                <td>₸25000</td>
+            </tr>
+        </table>
+        
+        <h4>Sign Up for a Course</h4>
+        <!-- I am using form tag to create a form for the user to fill out. -->
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            <label for="course">Select a Course:</label>
+
+            <select id="course" name="course" required>
+                <option value="beginner">Beginner Guitar Course</option>
+                <option value="intermediate">Intermediate Guitar Course</option>
+                <option value="advanced">Advanced Guitar Course</option>
+                <option value="acoustic">Acoustic Guitar Mastery</option>
+                <option value="electric">Electric Guitar Mastery</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <h4>Contact Me</h4>
+        <!-- Here I'm using the anchor tag to create a link to my email address. -->
+        <p>If you have any questions or need further information, feel free to <a href="mailto:zhakenovmadirus@gmail.com">contact us</a>.</p>
+    </div>
+</body>
+</html>
